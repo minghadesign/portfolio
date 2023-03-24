@@ -1,0 +1,418 @@
+#project {
+  padding: 0px 0px;
+  background: #f6f6f6;
+  margin-bottom: 8em;
+}
+#project ul {
+  position: relative;
+  list-style: none;
+  height: 4em;
+  box-shadow: 0.2em 0.2em 1em #00000015;
+  border-radius: 1em;
+  margin: 0 0 8em 0;
+}
+#project li {
+  display: inline-block;
+}
+#project .tabBtn1 {
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  font-size: 0.9em;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  height: 5em;
+  width: 25%;
+  line-height: 5em;
+  border-radius: 1em 0 0 1em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0e0e0;
+}
+#project .tabBtn1:hover {
+  background: #707070;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+#project .tabBtn2 {
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 25%;
+  font-size: 0.9em;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  height: 5em;
+  width: 25%;
+  line-height: 5em;
+  border-radius: 0 0 0 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0e0e0;
+  border-left-color: white;
+}
+#project .tabBtn2:hover {
+  background: #707070;
+  border-left-color: #707070;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+#project .tabBtn3 {
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 50%;
+  font-size: 0.9em;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  height: 5em;
+  width: 25%;
+  line-height: 5em;
+  border-radius: 0 0 0 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0e0e0;
+  border-left-color: white;
+}
+#project .tabBtn3:hover {
+  background: #707070;
+  border-left-color: #707070;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+#project .tabBtn4 {
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 75%;
+  font-size: 0.9em;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  height: 5em;
+  width: 25%;
+  line-height: 5em;
+  border-radius: 0 1em 1em 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0e0e0;
+  border-left-color: white;
+}
+#project .tabBtn4:hover {
+  background: #707070;
+  border-left-color: #707070;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+#project .imgHover {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+  border-radius: 1em;
+  margin: 0 0em 1.5em 0;
+}
+#project .active {
+  display: block;
+}
+#project .displayNone {
+  display: none;
+}
+
+#project .image {
+  position: relative;
+  width: 100%;
+  border-radius: 1em;
+  opacity: 1;
+}
+
+#project .image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 1em;
+  opacity: 0;
+}
+#project .imgHover:hover .image1 {
+  position: absolute;
+  width: 100%;
+  border-radius: 1em;
+  animation-name: photoAnim1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes photoAnim1 {
+  34%,
+  100% {
+    opacity: 0;
+  }
+  0%,
+  33% {
+    opacity: 1;
+  }
+}
+#project .image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 1em;
+  opacity: 0;
+}
+#project .imgHover:hover .image2 {
+  position: absolute;
+  width: 100%;
+  border-radius: 1em;
+  animation-name: photoAnim2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes photoAnim2 {
+  67%,
+  100% {
+    opacity: 0;
+  }
+  34%,
+  66% {
+    opacity: 1;
+  }
+  0%,
+  33% {
+    opacity: 0;
+  }
+}
+
+#project .middle {
+  position: inline-block;
+  z-index: 1;
+  position: absolute;
+  text-shadow: 0em 0em 0.4em #00000060;
+  color: white;
+  bottom: 1em;
+  opacity: 0;
+  left: 2em;
+  line-height: 0;
+  text-align: left;
+  transition: 0.5s ease;
+}
+#project .middleBg {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgb(0, 0, 0, 0.5)
+  );
+}
+#project .imgHover:hover .middleBg {
+  opacity: 1;
+  border-radius: 1em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgb(0, 0, 0, 0.3)
+  );
+}
+#project h5 {
+  color: white;
+  font-size: 1.1em;
+}
+#project .loadingBar {
+  position: relative;
+  border-radius: 4px;
+  opacity: 0;
+  margin-top: -4px;
+  height: 4px;
+  line-height: 4;
+  background-color: rgba(0, 0, 0);
+}
+
+@keyframes shortcutLoadingBar {
+  0% {
+    width: 0%;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#project .imgHover:hover .middle {
+  opacity: 1;
+}
+
+#project .imgHover:hover .loadingBar {
+  opacity: 1;
+  animation: shortcutLoadingBar linear 1s infinite;
+}
+#project .btn2 {
+  background-color: #2e2287;
+  border-radius: 20em;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  #project {
+    padding: 0px 0px;
+    background: #f6f6f6;
+    margin-bottom: 2em;
+  }
+
+  #project .imgHover {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    border-radius: 1em;
+    margin: 0 0em 1em 0;
+  }
+  #project ul {
+    position: relative;
+    list-style: none;
+    height: 6em;
+    box-shadow: 0.2em 0.2em 1em #00000015;
+    border-radius: 1em;
+    margin: -1em 0 4em 0;
+  }
+  #project .btnOnClick {
+    background: #707070 !important;
+    color: #ffffff !important;
+    border-style: solid !important;
+    border-color: #707070 !important;
+  }
+  #project .tabBtn1 {
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    font-size: 0.9em;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    height: 4em;
+    width: 50%;
+    line-height: 4em;
+    border-radius: 1em 0 0 0em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e0e0e0;
+  }
+  #project .tabBtn1:hover {
+    background: #707070;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  #project .tabBtn2 {
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 50%;
+    font-size: 0.9em;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    height: 4em;
+    width: 50%;
+    line-height: 4em;
+    border-radius: 0 1em 0 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e0e0e0;
+    border-left-color: white;
+  }
+  #project .tabBtn2:hover {
+    background: #707070;
+    border-left-color: #707070;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  #project .tabBtn3 {
+    position: absolute;
+    background: white;
+    top: 4em;
+    left: 0%;
+    font-size: 0.9em;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    height: 4em;
+    width: 50%;
+    line-height: 4em;
+    border-radius: 0 0 0 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e0e0e0;
+    border-top-color: white;
+  }
+  #project .tabBtn3:hover {
+    background: #707070;
+    border-top-color: #707070;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  #project .tabBtn4 {
+    position: absolute;
+    background: white;
+    top: 4em;
+    left: 50%;
+    font-size: 0.9em;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    height: 4em;
+    width: 50%;
+    line-height: 4em;
+    border-radius: 0 0 1em 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e0e0e0;
+    border-top-color: white;
+    border-left-color: white;
+  }
+  #project .tabBtn4:hover {
+    background: #707070;
+    border-top-color: #707070;
+    border-left-color: #707070;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  @keyframes shortcutLoadingBar {
+    0% {
+      width: 0%;
+      left: 2em;
+      top: 0px;
+    }
+    100% {
+      width: 80%;
+      left: 2em;
+      top: 0px;
+    }
+  }
+}
