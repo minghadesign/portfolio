@@ -740,7 +740,7 @@ a:hover {
     transition: 0.5s ease;
   }
   #icon {
-    padding: 5em 0px;
+    padding: 3em 0px 5em 0px ;
     margin-left: 2em;
     margin-right: 2em;
   }
@@ -848,7 +848,7 @@ a:hover {
     border-radius: 2em;
   }
   #introSentence {
-    margin-top: 4em;
+    margin-top: 1em;
   }
   .scroller span {
     left: 1em;
