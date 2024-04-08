@@ -143,6 +143,7 @@ h6 {
   height: 6%;
   opacity: 0;
 }
+
 .photobanner1 {
   top: 0;
   left: 0;
@@ -205,7 +206,7 @@ h6 {
   height: 70vh;
   align-items: center;
   width: 100%;
-  padding: 30% 10em 30% 6em;
+  padding: 22% 10em 30% 6em;
   /*align-content: center;
   flex-wrap: wrap;*/
 }
@@ -641,7 +642,7 @@ a:hover {
   #banner .jumbotron {
     height: 60vh;
     position: relative;
-    margin-bottom: 25em;
+    margin-bottom: -13em;
   }
   #banner h1 {
     text-transform: uppercase;
@@ -655,7 +656,7 @@ a:hover {
     align-items: center;
     width: 100%;
     left: 0;
-    bottom: -26em;
+    bottom: 10em;
     position: absolute;
     border-radius: 0 0 0 0;
     padding: 15% 2em 30% 2em;
@@ -667,13 +668,39 @@ a:hover {
     margin-bottom: 1em;
   }
   .bannerScrollDown {
+    display: none;
     opacity: 1;
     position: absolute;
     bottom: -5em;
     left: 45%;
     height: 10%;
   }
-
+  .photobanner1 {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .photobanner2 {
+    display: none;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding-top: 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: -1;
+  }
   .btn {
     display: inline-block;
     background: #292929;
