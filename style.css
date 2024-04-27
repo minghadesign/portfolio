@@ -701,6 +701,7 @@ a:hover {
     overflow: hidden;
     z-index: -1;
   }
+
   .btn {
     display: inline-block;
     background: #292929;
@@ -832,6 +833,7 @@ a:hover {
     transition: 0.5s ease;
   }
   #clientele {
+    display: none;
     margin: -6em 0 5em 0;
   }
   #clientele .jumbotron {
