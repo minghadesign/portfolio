@@ -850,6 +850,7 @@ a:hover {
     border-radius: 2em;
   }
   #introSentence {
+    display: none;
     margin-top: 1em;
   }
   .scroller span {
