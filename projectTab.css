@@ -304,16 +304,11 @@
     position: relative;
     list-style: none;
     height: 6em;
-    box-shadow: 0.2em 0.2em 1em #00000015;
+    box-shadow: 0.2em 0.2em 1em #00000025;
     border-radius: 1em;
     margin: -1em 0 4em 0;
   }
-  #project .btnOnClick {
-    background: #707070 !important;
-    color: #ffffff !important;
-    border-style: solid !important;
-    border-color: #707070 !important;
-  }
+
   #project .tabBtn1 {
     position: absolute;
     background: white;
