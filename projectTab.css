@@ -7,12 +7,23 @@
   position: relative;
   list-style: none;
   height: 4em;
-  box-shadow: 0.2em 0.2em 1em #00000015;
+  box-shadow: 0.2em 0.2em 1em #00000025;
   border-radius: 1em;
   margin: 0 0 8em 0;
+  color: #e0e0e0;
 }
 #project li {
   display: inline-block;
+}
+.content{
+  display: none;
+}
+.tab-content .active{
+  display: block;
+}
+.tabs .active{
+  background: #707070!important;
+  color: #ffffff!important;
 }
 #project .tabBtn1 {
   position: absolute;
