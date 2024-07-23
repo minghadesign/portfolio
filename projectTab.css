@@ -1,3 +1,7 @@
+.allBtnContent{
+  display: none;
+}
+
 #project {
   padding: 0px 0px;
   background: #f6f6f6;
@@ -123,6 +127,27 @@
   font-weight: 600;
   transition: 0.5s ease;
 }
+
+.btnImage {
+  display: inline-block;
+  background: #efaf00;
+  color: white;
+  margin-right: 0.5em;
+  font-size: 0.8em;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 18px;
+  border-radius: 50px;
+  border: 0;
+}
+#btnImage:hover {
+  background: #fdbc09;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+
 #project .imgHover {
   position: relative;
   overflow: hidden;
@@ -136,6 +161,13 @@
 }
 #project .displayNone {
   display: none;
+}
+
+.contentImages{
+  width: 100%;
+  border-radius: 1em;
+  z-index: 4;
+  margin-bottom: 2em;
 }
 
 #project .image {
@@ -208,7 +240,7 @@
   position: absolute;
   text-shadow: 0em 0em 0.4em #00000060;
   color: white;
-  bottom: 1em;
+  bottom: 1.5em;
   opacity: 0;
   left: 2em;
   line-height: 0;
@@ -225,8 +257,8 @@
   height: 100%;
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0),
-    rgb(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
   );
 }
 #project .imgHover:hover .middleBg {
@@ -237,8 +269,8 @@
   height: 100%;
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0),
-    rgb(0, 0, 0, 0.3)
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
   );
 }
 #project h5 {
@@ -285,6 +317,72 @@
   line-height: 3em;
   padding: 0 20px;
 }
+
+/* popupImage */
+.popup-wrapper{
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.popup{
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 10% auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 10px;
+  position:relative;
+}
+
+.popup button{
+  display: block;
+  width: 100%;
+  font-size: 22px;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: blueviolet;
+  width:65%;
+  text-decoration: none;
+  color: azure;
+}
+
+.popup input{
+  font-size: 22px;
+}
+.popupScroll{
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  position: absolute;
+  top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+}
+.popup-close{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size:20px ;
+  cursor: pointer;
+  z-index: 3;
+  width: 2em;
+}
+
+.hide{
+  display: none;
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
   #project {
     padding: 0px 0px;
