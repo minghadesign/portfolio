@@ -55,8 +55,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   font-family: "Montserrat", sans-serif;
   word-break: break-word;
   text-transform: uppercase;
@@ -91,9 +90,20 @@ h5 {
   font-size: 0.5em;
 }
 h6 {
+  font-family: "Montserrat", sans-serif;
+  word-break: break-word;
   font-weight: 500;
+  font-size: 1em;
+  color: rgb(239, 184, 31);
+  font-weight:bold;
+}
+
+.h7 {
+  font-family: "Montserrat", sans-serif;
+  word-break: break-word;
   line-height: 30px;
   font-size: 1em;
+  color: #ffffff;
 }
 .title {
   padding: 1rem 1rem;
@@ -108,6 +118,8 @@ h6 {
   display: inline-flex;
   flex-wrap: wrap;
 }
+
+
 .textCategory {
   padding: 8px;
   margin-right: 0.7em;

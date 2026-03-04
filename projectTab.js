@@ -117,3 +117,14 @@ closeBtn.addEventListener('click',()=>{
 popup.addEventListener('click',(e)=>{
     e.stopPropagation();
 })
+
+function stopAllVideos() {
+    // Select all iframes with the class 'yt-video'
+    var videos = document.querySelectorAll('.yt-video');
+
+    videos.forEach(function(video) {
+        var videoSrc = video.src;
+        // Reset the src attribute to force a reload and stop playback
+        video.src = videoSrc; 
+    });
+}
